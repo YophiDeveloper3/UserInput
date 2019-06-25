@@ -1,0 +1,28 @@
+# Getting (User_Input) in Python
+
+my_name = 'Vence'
+your_name = input('Enter your name: ') 
+print(f'Hello, {your_name}')
+
+# input function takes in something you want to tell the user or give the user so they know they have to type
+
+age = input('Enter your age: ')
+print(f'You have lived for {age * 12} months. ') 
+
+# When you run the code you will get 303030303030303030303030 months. The reasonn for this is because everything that is returned by the input function is a string. So what is age * 12 ----> age+age+age+age+ ok you get the picture lol
+
+# Strings are a set of characters, numbers and symbols with no meaning to the computer - only to humans
+
+age = input('Enter your age: ')
+age = int(age)
+print(f'You have lived for {age * 12} months. ')
+
+#Lines 16 - 18 can be done a easier way
+
+age = int(input('Enter your age: '))
+months = age *12
+print(f' You have lived for {months} months. ')
+
+age = int(input('Enter your age: '))
+seconds = age * 365 * 24 * 60 * 60
+print(f'You have lived for {seconds} seconds ')
